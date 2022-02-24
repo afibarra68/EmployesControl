@@ -7,18 +7,18 @@ import { EmployeeModule } from './employee/employee.module';
     TypeOrmModule.forRoot({
       type: 'postgres',
       host: 'localhost',
-      port: 5444,
-      username: 'postgres',
-      password: 'cidenet_tasking',
-      database: 'employees',
+      port: 5443,
+      username: 'andre_manager',
+      password: 'postgres',
+      database: 'cidenet_db',
       entities: ['dist/**/*.entity{.ts,.js}'],
       synchronize: false,
       retryDelay: 3000,
-      retryAttempts: 10,
+      retryAttempts: 10
     }),
-    EmployeeModule,
+    EmployeeModule
   ],
   controllers: [],
-  providers: [],
+  providers: []
 })
 export class AppModule {}

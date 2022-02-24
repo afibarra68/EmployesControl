@@ -1,0 +1,15 @@
+{
+    "type": "postgres",
+    "host": "localhost",
+    "port": 5443,
+    "username": "andre_manager",
+    "password": "postgres",
+    "database": "cidenet_db",
+    "entities": ["src/**/*.entity{.ts,.js}"],
+    "synchronize": false,
+    "migrationsTableName":"migrations",
+    "migrations": ["src/migrations/*.ts"],
+    "cli": {
+        "migrationsDir": "src/migrations"
+    }
+}

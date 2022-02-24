@@ -32,6 +32,15 @@
 $ npm install
 ```
 
+##prerequisites
+
+##1: has docker containers nothing more  
+
+##Executing loader for project 
+
+$docker-compose up -d postgres
+
+
 ## Running the app
 
 ```bash
@@ -71,3 +80,7 @@ Nest is an MIT-licensed open source project. It can grow thanks to the sponsors 
 ## License
 
 Nest is [MIT licensed](LICENSE).
+
+
+#run Migrations
+#npm run typeorm migration:create -- -n QuestionTables -d src/migrations
